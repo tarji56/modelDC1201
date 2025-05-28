@@ -1,0 +1,5 @@
+streamlit
+pandas
+scikit-learn # Or whatever ML library you used for your model
+openpyxl
+# Add any other libraries your app specifically uses
