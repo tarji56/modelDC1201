@@ -2,4 +2,5 @@ streamlit
 pandas
 scikit-learn # Or whatever ML library you used for your model
 openpyxl
+xgboost
 # Add any other libraries your app specifically uses
