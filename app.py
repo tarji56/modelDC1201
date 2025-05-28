@@ -26,9 +26,9 @@ def model_predict(df):
     result = rf.predict(df)
     name = ['Purity EDC (%ww)', '2-chloro (ppm)', '112 TCE (ppm)', 'CCl4 (ppm)']
     result = pd.DataFrame(result, columns=name)
-    result['Purity EDC (%ww)'] = result['2-chloro (ppm)'] * 10000
-    result['2-chloro (ppm)'] = result['112 TCE (ppm)'] * 10000
-    result['2-chloro (ppm)'] = result['CCl4 (ppm)'] * 10000
+    result['2-chloro (ppm)'] = result['2-chloro (ppm)'] * 10000
+    result['112 TCE (ppm)'] = result['112 TCE (ppm)'] * 10000
+    result['CCl4 (ppm)' = result['CCl4 (ppm)'] * 10000
     return pd.DataFrame(result, columns=name)
 
 # Streamlit UI
