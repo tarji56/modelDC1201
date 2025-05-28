@@ -24,11 +24,15 @@ def input_parameter(df):
 def model_predict(df):
     rf = pickle.load(open('DC1201_xg_model_1.sav','rb'))
     result = rf.predict(df)
-    name = ['Purity EDC (%wt)', '2-chloro (%ww)', '112 TCE (%ww)', 'CCl4 (%ww)']
+    name = ['Purity EDC (%ww)', '2-chloro (ppm)', '112 TCE (ppm)', 'CCl4 (ppm)']
+    result = pd.DataFrame(result, columns=name)
+    result['Purity EDC (%ww)'] = result['2-chloro (ppm)'] * 10000
+    result['2-chloro (ppm)'] = result['112 TCE (ppm)'] * 10000
+    result['2-chloro (ppm)'] = result['CCl4 (ppm)'] * 10000
     return pd.DataFrame(result, columns=name)
 
 # Streamlit UI
-st.title("XGBoost Prediction Web App for DC1201")
+st.title("Prediction Web App for DC1201")
 
 uploaded_file = st.file_uploader("Upload Excel File (.xlsx)", type=['xlsx'])
 
