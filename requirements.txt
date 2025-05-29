@@ -3,5 +3,5 @@ pandas
 scikit-learn # Or whatever ML library you used for your model
 openpyxl
 xgboost
-#bayes_opt
+bayes_opt
 # Add any other libraries your app specifically uses
