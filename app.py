@@ -162,28 +162,28 @@ Example:
 with st.form("input_form"):
     st.markdown("### 📥 Define variable bounds")
 
-    Total_flow_EL_lower = st.number_input("Total flow EL lower", value=9091.0)
-    Total_flow_EL_upper = st.number_input("Total flow EL upper", value=9269.0)
+    Total_flow_EL_lower = st.number_input("Total flow EL lower")
+    Total_flow_EL_upper = st.number_input("Total flow EL upper")
 
-    HCl_lower = st.number_input("HCl / EL lower", value=1.83)
-    HCl_upper = st.number_input("HCl / EL upper", value=2.0)
+    HCl_lower = st.number_input("HCl / EL lower")
+    HCl_upper = st.number_input("HCl / EL upper")
 
-    O2_lower = st.number_input("O2 / EL lower", value=0.5)
-    O2_upper = st.number_input("O2 / EL upper", value=1.0)
+    O2_lower = st.number_input("O2 / EL lower")
+    O2_upper = st.number_input("O2 / EL upper")
 
-    Rec_lower = st.number_input("Recycle / EL lower", value=1.4)
-    Rec_upper = st.number_input("Recycle / EL upper", value=2.0)
+    Rec_lower = st.number_input("Recycle / EL lower")
+    Rec_upper = st.number_input("Recycle / EL upper")
 
-    Vol_EL_RG_lower = st.number_input("Volume EL in RG lower", value=535.0)
-    Vol_EL_RG_upper = st.number_input("Volume EL in RG upper", value=1299.0)
+    Vol_EL_RG_lower = st.number_input("Volume EL in RG lower")
+    Vol_EL_RG_upper = st.number_input("Volume EL in RG upper")
 
-    Temp_lower = st.number_input("Reactor Temp lower (°C)", value=239.0)
-    Temp_upper = st.number_input("Reactor Temp upper (°C)", value=248.0)
+    Temp_lower = st.number_input("Reactor Temp lower (°C)")
+    Temp_upper = st.number_input("Reactor Temp upper (°C)")
 
-    P_OVH_lower = st.number_input("Reactor Pressure lower", value=3.9)
-    P_OVH_upper = st.number_input("Reactor Pressure upper", value=5.0)
+    P_OVH_lower = st.number_input("Reactor Pressure lower")
+    P_OVH_upper = st.number_input("Reactor Pressure upper")
 
-    Cat_lower = st.number_input("Catalyst inventory lower (ton)", value=70.0)
+    Cat_lower = st.number_input("Catalyst inventory lower (ton)", )
     Cat_upper = st.number_input("Catalyst inventory upper (ton)", value=80.0)
 
     init_points = st.number_input("Initial exploration points", value=5, min_value=1)
