@@ -148,16 +148,6 @@ st.text("""Input information:
 
 ---
 
-Example:
-
-    Total_flow_EL: (9091, 9269),
-    HCl_EL_in_Feed: (1.83, 2),
-    O2_EL_in_Feed: (0.5, 1),
-    Rec_EL_in_feed: (1.4, 2),
-    Vol_EL_in_RG: (535, 1299),
-    Temp_C: (239, 248),
-    P_OVH: (3.9, 5),
-    Cat_inventory_ton: (70, 80)
 """)
 with st.form("input_form"):
     st.markdown("### 📥 Define variable bounds")
